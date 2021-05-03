@@ -6,22 +6,34 @@ function pdfexport() {
      */
     //Datos izquierda 
     var logo = new Image();
-    logo.src = 'img/cabecera.png';
-    doc.addImage(logo, 'JPEG', 1, 1, 145, 30);
+    logo.src = 'img/cabecera.jpg';
+    doc.addImage(logo, 'JPEG', 5, 1, 30, 30);
+    
+    doc.setFontSize(14);
+    doc.setFontType("bold");
+    //doc.setTextColor(220, 20, 60);
+    doc.text(40, 17, 'Servicio de fluido eléctrico');
+    
+    doc.setFontSize(8);
+    doc.setFontType("bold");
+    doc.text(108, 15, 'Municipalidad Distrital');
+    doc.setFontSize(8);
+    doc.setFontType("bold");
+    doc.text(115, 20, 'de Pastaza');
 
     doc.setFontSize(8);
     doc.setFontType("bold");
-    doc.text(10, 30, 'Código');
+    doc.text(10, 35, 'Código');
     doc.setFontSize(10);
     doc.setFontType("bold");
-    doc.text(30, 30, '020281');
+    doc.text(30, 35, '020281');
 
     doc.setFontSize(8);
     doc.setFontType('bold');
-    doc.text(10, 35, 'Usuario');
+    doc.text(60, 35, 'Usuario');
     doc.setFontSize(10);
     doc.setFontType('normal');
-    doc.text(30, 35, 'KATTY GONGORA ARIMUYA');
+    doc.text(80, 35, 'KATTY GONGORA ARIMUYA');
 
     doc.setFontSize(8);
     doc.setFontType('bold');
